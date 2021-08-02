@@ -15,14 +15,13 @@ public class NewDateTimeClass {
     @JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate date;
 
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime dateWithTime1;
 
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
     private ZonedDateTime dateWithTime2;
 
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
-    private OffsetDateTime dateWithTime3;
+    private ZonedDateTime dateWithTime3;
 
-
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+    private OffsetDateTime dateWithTime4;
 }

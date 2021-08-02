@@ -15,7 +15,7 @@ import java.util.Date;
 public class LocalDateTimeDateDeserializer extends JsonDeserializer<Date> {
 
     private static final ZoneId ZONE_ID = ZoneId.of("Europe/Warsaw");
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
 
     @Override
     public Date deserialize(JsonParser jp, DeserializationContext ctxt)

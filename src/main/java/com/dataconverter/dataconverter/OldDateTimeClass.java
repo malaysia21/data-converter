@@ -20,9 +20,9 @@ public class OldDateTimeClass {
     @JsonDeserialize(using = LocalDateTimeDateDeserializer.class)
     private Date dateWithTime1;
 
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
     private Date dateWithTime2;
 
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSX")
-   private Date dateWithTime3;
+    private Date dateWithTime3;
+
+    private Date dateWithTime4;
 }
